@@ -1,0 +1,58 @@
+/*
+nav color: #205781
+a visited: #F6F8D5
+*/
+
+
+
+
+/* BODY */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html{
+    height: 100%;
+}
+a:any-link{
+    color: whitesmoke;
+}
+a:visited{
+    color: whitesmoke;
+    font-style: italic;
+}
+a:hover{
+    color: #F6F8D5;
+}
+
+/* HEADER */
+
+
+nav{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: #205781;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 2em;
+}
+h1{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+}
