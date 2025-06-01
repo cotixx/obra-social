@@ -1,6 +1,8 @@
 /*
 nav color: #205781
 a visited: #F6F8D5
+segundo color: #4F959D
+tercer color: #98D2C0
 */
 
 
@@ -21,38 +23,107 @@ a visited: #F6F8D5
 html{
     height: 100%;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 115px;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 10rem;
+}
 a:any-link{
     color: whitesmoke;
+    text-decoration: none;
 }
 a:visited{
-    color: whitesmoke;
+    color: #F6F8D5;
     font-style: italic;
+    text-decoration: none;
 }
 a:hover{
-    color: #F6F8D5;
+    color: whitesmoke;
 }
 
-/* HEADER */
-
-
-nav{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    background-color: #205781;
-}
-nav ul{
-    list-style: none;
-    width: 100%;
-}
-nav ul li{
-    display: inline-block;
-    justify-content: space-between;
-    margin: 2em;
-}
-h1{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+/* NAVEGADOR */
+@media (max-width: 999px) {
     
+    header{
+        background-color: #205781;
+        justify-content: space-evenly;
+    }
+    nav{
+        height: 65px;
+        padding: 0%;
+        border: 0%;
+        width: 100%;
+        display: flex;
+    }
+    .logo-nav{
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+    .dentro-nav{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        vertical-align: middle;
+        margin: 0 10px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+    .boton-nav img{
+        width: 35px;
+        height: 45px;
+        vertical-align: middle;
+    }
+    .menu-fuera, .header-fuera{
+        background-color:white ;
+    }
+    .titulo-header-nav{
+        text-align: center;
+        font-size: 30px;
+        color: #205781;
+        vertical-align: middle;
+    }
+    .menu-fuera a:visited{
+        color: #98D2C0;
+    }
+    .menu-fuera ul{
+        list-style: none;
+        width: 80%;
+        text-align: start;
+        margin-left: 20px;
+    }
+    .menu-fuera ul li{
+        justify-content: space-between;
+        margin: 2em 0;
+        color: #205781;
+        font-weight: bold;
+        border-bottom: 2px solid gray;
+        
+    }
+    .nav-enlaces h2{
+        color: #F6F8D5;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .nav-enlaces{
+        display: flex;
+        width: 90%;
+        padding: 6px 12px;
+        letter-spacing:3px;
+        justify-content: space-around;
+    }
+    .nav-enlaces img{
+        width: 35px;
+        height: 30px;
+    }
+    .info-usuario{
+        margin: 10px;
+        justify-content:end;
+    }
 }

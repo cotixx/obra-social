@@ -4,21 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obra Social Trabajadores Unidos</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- JAVASCRIPT -->
     <script defer src="./index.js"></script>
 </head>   
-<body>   
-    <header>
+<body>  
+    <header class="fixed-top"> 
         <nav>
-            <ul>
-                <li id="logoNav" class="logo">OSTU</li>
-                <li>Turnos</li>
-                <li>Estudios</li>
-                <li id="ingresarCuenta"><a href="#">Ingresar</a></li>
-                <li id="cuentaNueva"><a href="#" >Crear cuenta</a></li>
-            </ul>
+            <div class="dentro-naV">
+                <button class="btn boton-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img src="./imagenes/menu.png" alt="menu">
+                </button>
+            </div>
+            <div class="nav-enlaces">
+                <div>
+                    <h2><a href="" class="logo-nav">O.S.T.U</a></h2>
+                </div>
+                <div class="info-usuario">
+                    <a href="" ><img src="./imagenes/campana.png" alt="icono de notificaciones"></a>
+                    <a href="" ><img src="./imagenes/usuario.png" alt="icono de usuario"></a>
+                </div>
+                
+            </div>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header header-fuera">
+                    <h5 class="offcanvas-title titulo-header-nav" id="offcanvasExampleLabel">O.S.T.U</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body menu-fuera">
+                    <ul>
+                        <li>Turnos</li>
+                        <li>Estudios</li>
+                        <li id="ingresarCuenta"><a href="#">Ingresar</a></li>
+                        <li id="cuentaNueva"><a href="#" >Crear cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <h1 id="title">Obra Social Trabajadorxs Unidxs</h1>
+
+    
+
+<footer>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
